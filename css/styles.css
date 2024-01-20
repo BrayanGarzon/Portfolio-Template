@@ -6,13 +6,19 @@
 :root{
     --fonts-family: 'Plus Jakarta Sans', sans-serif;
     --color-primary-text: #737373;
+
     --color-hover-nav: rgba(0, 0, 0, 0.9);
     --color-links: #1e30f3;
+    --color-text:#6c757d;
     --color-background-div: #F8F9FA;
+    --color-background-secundary-div: #343A40;
+
     --bs-black: #000;
    
     --bs-link-color: #1e30f3;
     --bs-link-hover-color: #1826c2;
+    --background-gradient: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    
     
 }  
  
@@ -68,7 +74,7 @@ h1, p, ul, li, a {
   }
   
   li {
-    margin-right: 20px;
+    margin-left: 20px;
   }
 
   #textNav {
@@ -120,7 +126,7 @@ h1, p, ul, li, a {
   }
   .left-div .skills{
     width: 290px;
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    background: var(--background-gradient);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +149,7 @@ h1, p, ul, li, a {
     margin-bottom: 3rem;
   }
   .left-div .h1-gradient > span {
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    background: var(--background-gradient);
     -webkit-background-clip: text; /* For WebKit-based browsers (Chrome, Safari) */
     background-clip: text;
     color: transparent;
@@ -259,7 +265,7 @@ h1, p, ul, li, a {
   top: 0;
   height: 100%;
   width: 51%;
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  background: var(--background-gradient);
 }
 
 .chevron:before {
@@ -315,23 +321,186 @@ h1, p, ul, li, a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 6rem 0rem 6rem 0rem;
 }
 .aboutMe .containerText .texInfo{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+}
+.aboutMe .containerText .texInfo h2 > span{
+    background: var(--background-gradient);
+    -webkit-background-clip: text; /* For WebKit-based browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+.aboutMe .containerText .texInfo .pOne{
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+.aboutMe .containerText .texInfo .pTwo{
+  width: 80%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
 }
 .aboutMe .containerText .iconSocials{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  gap: 1.5rem;
 }
 .aboutMe .containerText .iconSocials > a{
   text-decoration: none;
 }
 .aboutMe .containerText .iconSocials a > i{
-  font-size: 20px;
-  color: #000;
+  font-size: 2rem;
+  background: var(--background-gradient);
+  -webkit-background-clip: text; /* Para aplicar el gradiente al texto en navegadores webkit (Chrome, Safari, etc.) */
+  color: transparent;
+}
+
+
+
+
+
+/*SECTION PROJECTS*/
+.containerProjects{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-div);
+  flex-direction: column;
+}
+.containerProjects .containerItemsProjects{
+  width: 65%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem 0rem 3rem 0rem;
+}
+.containerItemsProjects h2 > span{
+  background: var(--background-gradient);
+    -webkit-background-clip: text; /* For WebKit-based browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+
+.containerItemsProjects .cardsProject{
+  width: 60%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 1.25rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.containerItemsProjects .cardsProject .cardText{
+  width: 55%;
+  padding: 3rem;
+}
+.containerItemsProjects .cardsProject .cardImage{
+  width: 45%;
+  height: 390px;
+  background-color: var(--color-background-secundary-div);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerItemsProjects .cardsProject .cardImage p{
+  font-size: 2rem;
+  color: var(--color-text);
+}
+
+.containerProjects .letGo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-gradient);
+}
+.containerProjects .letGo .text{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem 0rem 3rem 0rem;
+}
+.containerProjects .letGo .text > h2{
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+}
+.containerProjects .letGo .text > button{
+  font-size: 16px;
+  padding: 16px 48px;
+  border-radius: 5px;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  background-color: transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.containerProjects .letGo .text > button:hover{
+  background-color: white;
+  color: var(--bs-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height: 50px;
+  font-size: 0.9rem;
+  color: var(--bs-dark);
+  font-family: var(--fonts-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .containerFooter{
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#sectionFooter{
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
