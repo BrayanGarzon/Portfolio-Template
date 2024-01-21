@@ -6,6 +6,7 @@
 :root{
     --fonts-family: 'Plus Jakarta Sans', sans-serif;
     --color-primary-text: #737373;
+    --color-titles-text: #212529;
 
     --color-hover-nav: rgba(0, 0, 0, 0.9);
     --color-links: #1e30f3;
@@ -465,6 +466,77 @@ h1, p, ul, li, a {
 .containerProjects .letGo .text > button:hover{
   background-color: white;
   color: var(--bs-black);
+}
+
+
+
+
+/*SECTION PAGE CONTACT*/
+.containerContact {
+  width: 100%;
+  height: calc(100vh - 130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerContact .containerForm{
+  width: 65%;
+  height: auto;
+  background-color: var(--color-background-div);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerContact .containerForm .iconEmail{
+  width: 3rem;
+  height: 3rem;
+  background: var(--background-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.containerContact .containerForm .textForm { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.containerContact .containerForm .textForm .iconEmail > i{
+  font-size: 1.5rem;
+  color: white;
+}
+.containerContact .containerForm .textForm > h1{
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--color-titles-text);
+  margin-bottom: 1rem;
+}
+.containerContact .containerForm .textForm > p{
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-primary-text);
+}
+
+.containerContact .containerForm form{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 
