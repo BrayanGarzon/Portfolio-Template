@@ -7,6 +7,7 @@
     --fonts-family: 'Plus Jakarta Sans', sans-serif;
     --color-primary-text: #737373;
     --color-titles-text: #212529;
+    --color-titles-text-secundary: #E21E80;
     --color-border-inputs: #CED4DA;
     --color-border-inputs-focus: #CED2F9;
 
@@ -217,7 +218,7 @@ h1, p, ul, li, a {
     height: 45rem;
     position: absolute;
     bottom: 0;
-    transform: translateX(20%);
+    transform: translateX(15%);
 }
 
 
@@ -408,6 +409,7 @@ h1, p, ul, li, a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-direction: column;
 }
 .containerResume .resume .experience .tittle{
   width: 100%;
@@ -440,7 +442,235 @@ h1, p, ul, li, a {
   text-decoration: none;
   padding: 10px;
 }
+.containerResume .resume .experience .card{
+  width: 56%;
+  height: auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 1rem;
+  padding: 3rem;
+  gap: 2rem;
+  background-color: white;
+}
 
+.containerResume .resume .experience .card .date{
+  width: 25%;
+  height: auto;
+  background-color: var(--color-background-div);
+  padding: 15px;
+  border-radius: 1rem;
+}
+.containerResume .resume .experience .card .date > h2{
+  color: var(--bs-link-color);
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin: 0;
+}
+.containerResume .resume .experience .card .date > .h3One{
+  color: var(--bs-black);
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.containerResume .resume .experience .card .date > h3{
+  color: var(--color-primary-text);
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin: 0px;
+}
+.containerResume .resume .experience .card .description{
+  width: 70%;
+  height: auto;
+}
+.containerResume .resume .experience .card .description > p {
+  color: var(--bs-black);
+}
+
+
+/*education*/
+.containerResume .resume .education{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+}
+.containerResume .resume .education .tittle{
+  width: 64%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+.containerResume .resume .education .tittle > h2{
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+  color: var(--color-titles-text-secundary);
+}
+.containerResume .resume .education .card{
+  width: 56%;
+  height: auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 1rem;
+  padding: 3rem;
+  gap: 2rem;
+  background-color: white;
+}
+.containerResume .resume .education .card .date{
+  width: 25%;
+  height: auto;
+  background-color: var(--color-background-div);
+  padding: 15px;
+  border-radius: 1rem;
+}
+.containerResume .resume .education .card .date > h2{
+  color: var(--color-titles-text-secundary);
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin: 0;
+}
+.containerResume .resume .education .card .date > .h3One{
+  color: var(--bs-black);
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.containerResume .resume .education .card .date > h3{
+  color: var(--color-primary-text);
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin: 0px;
+}
+.containerResume .resume .education .card .description{
+  width: 70%;
+  height: auto;
+}
+.containerResume .resume .education .card .description > p {
+  color: var(--bs-black);
+}
+
+
+/*skills*/
+.containerResume .resume .skill{
+  width: 56%;
+  height: auto;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 3rem;
+}
+.containerResume .resume .skill .title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.containerResume .resume .skill .title .i {
+  width: 50px;
+  height: 50px;
+  background-color: #1826c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: var(--background-gradient);
+}
+.containerResume .resume .skill .title .i > i{
+  color: white;
+  font-size: 20px;
+}
+.containerResume .resume .skill .title h2 > span{
+  background: var(--background-gradient);
+    -webkit-background-clip: text; /* For WebKit-based browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+}
+.containerResume .resume .skill .section-skills{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.containerResume .resume .skill .section-skills .item{
+  width: calc(33.33% - 10px);
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: var(--color-background-div);
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+}
+
+
+
+
+
+
+.containerResume .resume .skill .title-lenguages{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 2rem;
+}
+.containerResume .resume .skill .title-lenguages .i {
+  width: 50px;
+  height: 50px;
+  background-color: #1826c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: var(--background-gradient);
+}
+.containerResume .resume .skill .title-lenguages .i > i{
+  color: white;
+  font-size: 20px;
+}
+.containerResume .resume .skill .title-lenguages h2 > span{
+  background: var(--background-gradient);
+    -webkit-background-clip: text; /* For WebKit-based browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+}
+.containerResume .resume .skill .section-skills-lenguages{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.containerResume .resume .skill .section-skills-lenguages .item{
+  width: calc(33.33% - 10px);
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: var(--color-background-div);
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+}
 
 
 /*SECTION PROJECTS*/
