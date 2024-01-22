@@ -83,3 +83,8 @@ function updateYear() {
 
 // Llama a la función de actualización del año cuando el DOM está completamente cargado
 document.addEventListener("DOMContentLoaded", updateYear);
+
+
+
+
+

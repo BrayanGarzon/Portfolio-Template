@@ -7,12 +7,16 @@
     --fonts-family: 'Plus Jakarta Sans', sans-serif;
     --color-primary-text: #737373;
     --color-titles-text: #212529;
+    --color-border-inputs: #CED4DA;
+    --color-border-inputs-focus: #CED2F9;
 
     --color-hover-nav: rgba(0, 0, 0, 0.9);
     --color-links: #1e30f3;
     --color-text:#6c757d;
     --color-background-div: #F8F9FA;
     --color-background-secundary-div: #343A40;
+    --color-background-buttons: #6A76F5;
+    --color-background-buttons-hover: #4654f3;
 
     --bs-black: #000;
    
@@ -101,6 +105,8 @@ h1, p, ul, li, a {
     padding: 0;
   }
 
+
+  /*SECTION HOME*/
   /*SECTION PROFILE*/
   .profile{
     width: 100%;
@@ -369,6 +375,71 @@ h1, p, ul, li, a {
 }
 
 
+/*SECTION RESUME*/
+.containerResume{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-background-div);
+}
+.containerResume .resume{
+  width: 65%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem 0rem 3rem 0rem;
+}
+
+.containerResume .resume h2 > span{
+  background: var(--background-gradient);
+    -webkit-background-clip: text; /* For WebKit-based browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+.containerResume .resume .experience{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.containerResume .resume .experience .tittle{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.containerResume .resume .experience .tittle .cv{
+  width: auto;
+  height: 50px;
+  background-color: var(--bs-link-color); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: 0.1s all ease-in-out;
+}
+.containerResume .resume .experience .tittle > h2{
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: var(--bs-link-color);
+}
+.containerResume .resume .experience .tittle .cv:hover{
+  background-color: var(--bs-link-hover-color); 
+}
+.containerResume .resume .experience .tittle .cv > a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
 
 
 
@@ -471,13 +542,15 @@ h1, p, ul, li, a {
 
 
 
+
+
 /*SECTION PAGE CONTACT*/
 .containerContact {
   width: 100%;
-  height: calc(100vh - 130px);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2rem 0rem 2rem 0rem;
 }
 
 .containerContact .containerForm{
@@ -539,14 +612,71 @@ h1, p, ul, li, a {
   margin-bottom: 3rem;
 }
 
+input, textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
 
+.containerContact .containerForm form > input{
+  width: 65%;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-inputs);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  transition: border 0.1s ease;
+  padding-left: 10px;
+  font-family: var(--fonts-family);
+}
+.containerContact .containerForm form > input::placeholder{
+  color: var(--color-primary-text); 
+}
+.containerContact .containerForm form > input:focus{
+  border: 5px solid var(--color-border-inputs-focus);
+}
+.containerContact .containerForm form > textarea{
+  max-width: 65%;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-inputs);
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 2rem;
+  transition: border 0.1s ease;
+}
+.containerContact .containerForm form > textarea::placeholder{
+  color: var(--color-primary-text); 
+  font-family: var(--fonts-family);
+  font-size: 12px;
 
+}
+.containerContact .containerForm form > textarea:focus{
+  border: 5px solid var(--color-border-inputs-focus);
+}
 
-
-
-
-
-
+.containerContact .containerForm form > button{
+  margin: 0;
+  padding: 0;
+  max-width: 66%;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: var(--color-background-buttons);
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+.containerContact .containerForm form > button:hover{
+  background-color: var(--color-background-buttons-hover);
+}
 
 
 /* FOOTER */
