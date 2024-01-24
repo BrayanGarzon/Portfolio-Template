@@ -1,7 +1,7 @@
 {
     "name": "Portafolio Web - Plantilla",
-    "description": "Esta es una calculadora web simple creada con HTML, CSS y JavaScript que te permite realizar operaciones matemáticas básicas de forma interactiva en tu navegador.",
-    "image": "https://github.com/BrayanGarzon/Calculator-App/blob/main/images/CallculatorApp.png?raw=true",
+    "description": "Esta es una plantilla de portafolio elegante y responsive, desarrollada con HTML, CSS y JavaScript. Destaca tus habilidades, experiencia y proyectos de manera atractiva. Incluye una navegación intuitiva, secciones organizadas y detalles interactivos para mostrar tu trabajo de manera impactante. ¡Haz que tu portafolio destaque con esta plantilla moderna y fácil de usar!",
+    "image": "https://github.com/BrayanGarzon/Portfolio/blob/main/assets/img/image-portafolio.png?raw=true",
     "frameworks": ["JavaScript", "Html", "CSS"],
     "url_repo": "https://github.com/BrayanGarzon/Portfolio.git",
     "url_live": "https://vercel.com/brayangarzon/portfolio/2nr7NzxDJjhSxLJB4BXU6hHn3nkL",
