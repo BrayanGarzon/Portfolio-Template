@@ -1493,14 +1493,14 @@ footer .containerFooter{
     margin-top: 5rem;
   }
   .rigth-div .container-image img{
-    height: 40rem;
-    transform: translateX(6%);
+    height: 48rem;
+    transform: translateX(7%);
   }
   
 }
 
 /* LARGE SCREEN */
-@media only screen and (max-width: 2001px) {
+@media only screen and (min-width: 2001px) and (max-width: 2500px){
   .rigth-div .container-image .gradient-image{
     position: relative;
     width: 35vw;
@@ -1509,8 +1509,6 @@ footer .containerFooter{
   }
   .rigth-div .container-image img{
     height: 48rem;
-    position: absolute;
-    bottom: 0;
     transform: translateX(15%);
 }
 }
