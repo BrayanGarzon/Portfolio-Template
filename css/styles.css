@@ -376,6 +376,12 @@ h1, p, ul, li, a {
 }
 
 
+
+
+
+
+
+
 /*SECTION RESUME*/
 .containerResume{
   width: 100%;
@@ -673,6 +679,9 @@ h1, p, ul, li, a {
 }
 
 
+
+
+
 /*SECTION PROJECTS*/
 .containerProjects{
   width: 100%;
@@ -751,7 +760,7 @@ h1, p, ul, li, a {
   color: white;
   font-weight: 800;
 }
-.containerProjects .letGo .text > button{
+.containerProjects .letGo .text a > button{
   font-size: 16px;
   padding: 16px 48px;
   border-radius: 5px;
@@ -764,7 +773,7 @@ h1, p, ul, li, a {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
-.containerProjects .letGo .text > button:hover{
+.containerProjects .letGo .text a > button:hover{
   background-color: white;
   color: var(--bs-black);
 }
@@ -1154,7 +1163,7 @@ footer .containerFooter{
   .containerProjects .letGo .text > h2{
     font-size: 2rem;
   }
-  .containerProjects .letGo .text > button{
+  .containerProjects .letGo .text a > button{
     padding: 16px 30px;
   }
   /*========END-PROJECTS========*/
@@ -1428,7 +1437,7 @@ footer .containerFooter{
     .containerProjects .letGo .text > h2{
       font-size: 2.7rem;
     }
-    .containerProjects .letGo .text > button{
+    .containerProjects .letGo .text a > button{
       padding: 16px 40px;
       font-size: 20px;
     }
