@@ -1502,7 +1502,7 @@ footer .containerFooter{
     margin-top: 5rem;
   }
   .rigth-div .container-image img{
-    height: 48rem;
+    height: 40rem;
     transform: translateX(7%);
   }
   
@@ -1518,7 +1518,7 @@ footer .containerFooter{
   }
   .rigth-div .container-image img{
     height: 48rem;
-    transform: translateX(15%);
+    transform: translateX(7%);
 }
 }
 
