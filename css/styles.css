@@ -215,7 +215,7 @@ h1, p, ul, li, a {
     border-radius: 5vw;
   }
   .rigth-div .container-image img{
-    height: 45rem;
+    height: 39rem;
     position: absolute;
     bottom: 0;
     transform: translateX(15%);
@@ -1494,31 +1494,19 @@ footer .containerFooter{
 }
 
 
-/* STYLES LAPTOP*/
-@media only screen and (min-width: 1024px) and (max-width: 2000px) {
-  .rigth-div .container-image .gradient-image{
-    width: 32vw;
+/* STYLES LAPTOP & LARGE SCREEN */
+@media only screen and (min-width: 2000px) and (max-width: 2500px) {
+  .rigth-div .container-image .gradient-image {
+    width: 30vw;
     height: 30vw;
     margin-top: 5rem;
   }
-  .rigth-div .container-image img{
-    height: 40rem;
-    transform: translateX(7%);
+
+  .rigth-div .container-image img {
+    height: 45rem; /* Ajusta el valor según tus necesidades */
+    transform: translateX(15%);
   }
-  
 }
 
-/* LARGE SCREEN */
-@media only screen and (min-width: 2001px) and (max-width: 2500px){
-  .rigth-div .container-image .gradient-image{
-    position: relative;
-    width: 35vw;
-    height: 32vw;
-    border-radius: 5vw;
-  }
-  .rigth-div .container-image img{
-    height: 48rem;
-    transform: translateX(7%);
-}
-}
+
 
